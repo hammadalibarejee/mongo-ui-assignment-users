@@ -43,7 +43,7 @@ function getAllUser() {
 
             users.map((eachUser, index) => {
                 document.getElementById("tableBody").innerHTML +=
-                    `<tr id="${eachUser._id}" ata-aos="fade-zoom-in"
+                    `<tr id="${eachUser._id}" data-aos="fade-zoom-in"
                     data-aos-easing="ease-in-back"
                     data-aos-delay="500"
                     data-aos-offset="0">
@@ -89,13 +89,16 @@ function editInfo(id, index) {
     console.log(userObject);
 
     document.getElementById(id).innerHTML =
-        `<tr id="${id}" class="animate">
+        `<tr id="${id}" class="animate" data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="500"
+        data-aos-offset="0">
         <th scope="row">${id}</th>
         <td><input type="text" id ="${id}-name" value="${userObject.name}"></td>
         <td><input type="text" id ="${id}-email" value="${userObject.email}"></td>
         <td><input type="text" id ="${id}-address" value="${userObject.address}"></td>
         <td>
-        <button type="button" class="btn btn-success" onclick="updateInfo('${id}','${index}')">Update</button>
+        <button type="button" class="btn btn-success" onclick="updateInfo('${id}','${index}')" >Update</button>
         
         </td>
 </tr>`
