@@ -1,0 +1,48 @@
+body {
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image:url(bg-image.jpeg) ;
+    background-size: cover;
+    background-position: top center;
+
+}
+input .form-control{
+    width:100%;
+    padding:10px 15px;
+    border:none;
+    outline:none;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #313131;
+    border-radius: 16px 8px 16px 8px;
+    border-bottom: 3px solid #DF8E00;
+    font-size:20px;
+    font-weight:300;
+    transition: 0.2s ease-out;
+}
+.form-control:focus{
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: ease-in;
+    transition-duration: 0.6s;
+}
+button{
+
+    padding:10px 15px;
+    margin-left:3px;
+    outline:none;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #313131;
+    border-radius: 16px 8px 16px 8px;
+    border-bottom: 3px solid #DF8E00;
+    font-size:20px;
+    font-weight:300;
+    transition: 0.2s ease-out;
+}
+button:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: ease-in;
+    transition-duration: 0.6s;   
+}
+.animate{
+    transition: ease-in;
+    -webkit-transition: ease-in;
+    transition-duration: 0.6s;
+}
